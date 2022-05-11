@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- links -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&family=Montserrat+Alternates:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/register.css" />
+    <title>SignUp</title>
+  </head>
+  <body>
+    <!-- form -->
+    <div class="container my-5 register-fath">
+      <div class="form-content w-100 mx-auto">
+        <nav class="navbar p-0 m-0 navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+              <img
+                src="images/imgbin_shopping-cart-computer-icons-retail-png.png"
+                alt=""
+                class=""
+                width="30"
+                height="35"
+              />Maxemo
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="authen collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav ms-auto authenLinks d-flex">
+                <li><a href="login.html">SignIn</a></li>
+                <li><a href="register.html">SignUp</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="d-flex px-3 flex-column w-100">
+          <h2>Register ...</h2>
+          <label for="userName"> Username : </label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="enter Username ..."
+            id="userName"
+          />
+          <label for="Email">Email :</label>
+          <input
+            class="form-control"
+            type="email"
+            name=""
+            placeholder="put your Email ..."
+            id="Email"
+          />
+          <label for="passWord">Password :</label>
+          <input
+            class="form-control"
+            type="password"
+            name=""
+            placeholder="put your password ..."
+            id="passWord"
+          />
+          <div class="alert alert-danger d-none my-2" role="alert">
+            You should complete all forms
+          </div>
+          <button type="submit" class="btn sbtn" id="registerBtn">
+            Register
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- js-links -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/register.js"></script>
+  </body>
+</html>

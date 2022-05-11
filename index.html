@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&family=Montserrat+Alternates:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Shopping cart</title>
+  </head>
+
+  <!-- boody -->
+  <body>
+    <!-- navbar -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light position-fixed" style="right: 0;left: 0;top: 0; z-index: 2;background-color:white">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img
+            src="images/imgbin_shopping-cart-computer-icons-retail-png.png"
+            alt=""
+            class=""
+            width="30"
+            height="35"
+          />Maxemo
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav navo ms-md-5">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#productss">Products</a>
+              </li> 
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Sort
+                </a>
+                <ul class="dropdown-menu fromto" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" id="low" >from Low to High</a></li>
+                  <li><a class="dropdown-item" id="high" >from High to Low</a></li>
+                </ul>
+              </li>                            
+            </ul>     
+          </div>
+          <div class="authen collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto authenLinks d-flex">
+              <li><a href="login.html">SignIn</a></li>
+              <li><a href="register.html">SignUp</a></li>
+            </ul>
+            <ul
+              class="userInfo d-none navbar-nav ms-auto justify-content-evenly align-items-center"
+            >
+              <li><i class="fa-solid fa-user"></i></li>
+              <li class="Nameduser"></li>
+              <li class="chopingCart px-2">
+                <button
+                  class="btn"
+                  type="button"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="fa-solid fa-cart-shopping">
+                    <div id="counter"></div
+                  ></i>
+                </button>
+                <ul
+                  id="productmenu"
+                  class="dropdown-menu text-center px-2"
+                  aria-labelledby="dropdownMenuButton1"
+                >
+                <li>
+                  <button class="btn btn-info">
+                    <a href="productCart.html">Go to cart</a>
+                  </button>
+                  </li>
+                </ul>
+              
+              </li>
+              <li class="logOut"><a href="register.html">LogOut</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- cover section -->
+    <section class="container mt-5 py-5"  >
+      <div class="w-100 d-flex" id="home">
+        <div class="w-50 d-flex flex-column justify-content-evenly py-5 px-md-5" style="background-color: #b6e1f6;border-radius:30px 0 0 0">
+          <p style="font-size: 1rem;">Just Dreped</p>
+          <h1 style="font-weight:bolder">
+            Feel<br />
+            Authentic<br />
+            Peace
+          </h1>
+          <button class="btn btn-dark w-75 mx-2 m-md-5 px-md-5">Shop Now</button>
+        </div>
+        <div
+          class="w-50 text-center position-relative lefto"
+          style="background-color: #e3f4fc;border-radius:0 0 30px 0;position: relative;"
+        >
+        <div style="background-color:#b6e1f6;height: 30px;width: 30px; border-radius: 75%;"></div>
+        <div style="background-color:#b6e1f6;height: 50px;width: 50px; border-radius: 50%;"></div>
+        <div style="background-color:#b6e1f6;height: 10px;width: 10px; border-radius: 50%;"></div>
+        <div style="background-color:#b6e1f6;height: 20px;width: 20px; border-radius: 50%;"></div>
+        <div style="background-color:#b6e1f6;height: 30px;width: 30px; border-radius: 50%;"></div>
+          <img
+            src="images/download-removebg-preview.png"
+            alt=""
+            srcset=""
+            class="w-100 pb-5"
+          />
+          </div>
+        </div>
+    </section>
+    <!-- the Jop -->
+    <section class="d-flex justify-content-center align-items-center container my-5">
+      <div class="d-flex justify-content-center align-items-center text-center w-75 py-5 flex-wrap">
+        <h2 style="font-weight:bolder">What We Do</h2>
+        <p style="font-size:0.7rem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus nostrum voluptates nulla itaque facilis quam doloribus totam corrupti cumque unde sit nobis sequi amet aperiam omnis repudiandae dolor, dicta perspiciatis vitae deserunt nam? Odio, dicta quasi. Rerum temporibus dolor praesentium, recusandae beatae adipisci, quaerat perspiciatis impedit ipsum nesciunt laborum fugit.</p>      </div>
+    </section>
+
+    
+    <!-- productSection -->
+    <section class="products my-5" id="productss">
+   
+      <div class="text-center"><h2 style="font-weight:bolder">Our products</h2></div>
+     
+      <div class="container-fluid">
+        <div id="products" class="row mx-2"></div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="container-fluid d-flex flex-column justify-content-between">
+      <div class="text-center"><h2 class="pt-5" style="color:white">contact with us</h2></div>
+     <div class="w-50  mx-auto d-flex justify-content-evenly align-items-center ">
+      <i class="fa-brands  fa-facebook" style="color: rgb(2, 2, 143);"></i>
+      <i class="fa-brands  fa-instagram" style="color:red ;"></i>
+      <i class="fa-brands  fa-twitter" style="color:#50a3cc ;"></i>
+      <i class="fa-brands  fa-whatsapp" style="color:green"></i>
+      <i class="fa-brands  fa-google-plus-g" style="color: rgb(180, 42, 70);"></i>
+      <i class="fa-brands  fa-youtube" style="color:red ;"></i>
+    </div>
+    <div class="text-center"><p style="color:white">Copyright &#169 2022. All Rights Reserved	</p></div>
+    </footer>
+    <!-- js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

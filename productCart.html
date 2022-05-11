@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ProductCart</title>
+    <!-- links -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&family=Montserrat+Alternates:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/productCart.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-light"
+        style="
+          background-color: white;
+          position: fixed;
+          left: 0;
+          right: 0;
+          top: 0;
+          z-index: 1;
+        "
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="images/imgbin_shopping-cart-computer-icons-retail-png.png"
+              alt=""
+              class=""
+              width="30"
+              height="35"
+            />Maxemo
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="authen collapse navbar-collapse" id="navbarNavDropdown">
+            <ul
+              class="userInfo navbar-nav ms-auto justify-content-evenly align-items-center"
+            >
+              <li><i class="fa-solid fa-user"></i></li>
+              <li class="Nameduser"></li>
+
+              <li class="logOut"><a href="register.html">LogOut</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div id="minHeight">
+          <!-- No product -->
+    <div class="container mt-100 d-none" id="noProductss">
+      <div class="row">
+          <div class="col-md-12">
+              <div class="card">
+                  <div class="card-body cart">
+                      <div class="col-sm-12 empty-cart-cls text-center d-flex flex-column justify-content-center align-items-center"> 
+                        <img src="images/dCdflKN.png" width="130" height="130" class="img-fluid mb-4 mr-3">
+                          <h3><strong>Your Cart is Empty</strong></h3>
+                          <h4>Add something to make me happy :)</h4> 
+                          <button class="btn shopping"><a href="index.html">Go To Shopping</a></button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+    </section>
+    <!-- product section -->
+    <section class="py-5 d-none" id="productss">
+      <div class="container mx-auto py-5">
+        <div class="row">
+          <div class="col-md-12 p-4 d-flex justify-content-between">
+            <h4 style="font-weight: bolder">Shopping Cart</h4>
+            <p
+              id="RemoveAll"
+              style="text-decoration: underline; color: red; cursor: pointer"
+            >
+              Remove all
+            </p>
+          </div>
+          <div id="products" class="col-md-12 p-0"></div>
+          <div class="col-md-8"></div>
+          <div
+            class="col-md-4 productPrice"
+            style="border-top: 1px black solid"
+          >
+            <div class="d-flex flex-column justify-content-evenly p-0">
+              <p class="fs-4 fw-bold">Sub-Total</p>
+              <div class="d-flex">
+                <p id="productTotal" style="color: grey"></p>
+                <p style="color: grey">. Items</p>
+              </div>
+              <div class="d-flex justify-content-end" style="margin-top: -40px">
+                <p id="productPrice" class="fw-bold fs-4"></p>
+                <span class="fs-4">.00 $</span>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center my-2">
+              <button class="Check btn btn-info">Check out</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    </div>
+    <!-- js -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/productCart.js"></script>
+  </body>
+</html>
+
+<!--  -->
