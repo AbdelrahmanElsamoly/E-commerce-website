@@ -28,7 +28,6 @@ if (localStorage.getItem("user Information") != null) {
 } else {
   userArr = [];
 }
-console.log(userArr);
 
 btnLogIn.addEventListener("click", function (e) {
   authen();
